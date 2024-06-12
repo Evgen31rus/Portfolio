@@ -22,7 +22,7 @@ function App() {
   const isOpenMenu = useSelector((state:RootState)=>state.SliceMobileMenu.isOpen)
   return (
     <div className="App">
-      <div className={`z-40 bg-[black] bg-opacity-70 transition-all duration-300 fixed w-[100vh] h-[100vh] justify-start hidden sm:flex ${isOpenMenu? 'bg-opacity-70' : 'bg-opacity-0'}`}>
+      <div className={` bg-[black]  transition-all duration-300 fixed w-[100vh] h-[100vh] justify-start hidden sm:flex ${isOpenMenu? 'bg-opacity-70 z-40' : 'bg-opacity-0 z-10'}`}>
       <MobileMenu/>
       </div>
       <NavBar/>
