@@ -1,29 +1,84 @@
 import github from '../img/github.png'
+import {motion} from 'framer-motion'
+import img1 from '../img/aboute/img1.jpg'
+import img2 from '../img/aboute/img2.jpg'
+import img3 from '../img/aboute/img3.jpg'
+import SliderPhoto from './SliderPhoto'
+import { useDispatch, useSelector } from 'react-redux'
+import { HandleSwitchLeft, HandleSwitchRight } from '../store/SliceSwitchSlider'
+import { RootState } from '../store/store'
+
+const wrapperAnimation ={
+    hidden:{
+        x:100,
+        positon: 'absolute',
+        opacity: 0,
+    },
+    visible: (custom:number)=>({
+        x:0,
+        opacity: 1,
+        transition: {delay: custom*0.2}
+    })
+}
 
 export default function Slider(){
+    const RussianLanguage = useSelector((state: RootState)=> state.switchLanguage.RussianLanguage)
+    const translateCount = useSelector((state:RootState)=> state.switchSlider.translate)
+    const dispatch = useDispatch()
+    const sliderPhoto = [
+        {
+        img: img1,
+        },
+        {
+        img: img2,
+        },
+        {
+        img: img3,
+        },
+    ]
+
 return(
-    <div className={`flex flex-col w-[40%] h-[70%] justify-around sm:flex-col-reverse`}>
+    <motion.div 
+    initial='hidden'
+    whileInView='visible'
+    className={`flex flex-col w-[42%] h-[70%] justify-around sm:flex-col-reverse sm:w-[100%] `}>
 
 
-<div className={`bg-nav w-[420px] bg-cover bg-center bg-norepeat h-[300px] rounded-2xl shadow-lg shadow-cyan-500/50`}
 
-style={{
-    backgroundImage: `url(https://sun9-31.userapi.com/impg/hR_s2X0hJJ1IlG119XlwGJBznAZD9K8YzVmsqw/ZE6dSSmCVRE.jpg?size=1637x2160&quality=95&sign=745888148fe8664cdc362fcd02ef8f88&type=album)`
-}}>
+<div>
 
 </div>
+<motion.div 
+variants={wrapperAnimation}
+custom={1}
 
-<div className={`flex justify-around mt-5`}>
+className={`bg-nav flex items-center w-[400px] bg-cover bg-center overflow-hidden bg-norepeat h-[300px] rounded-2xl shadow-lg shadow-cyan-500/50 sm:w-[90%]  md:w-[300px] relative`}
+>
+
+{
+    <SliderPhoto array={sliderPhoto}/>
+}
+
+<div className={`absolute w-[30px] h-[30px] right-[0] text-[2.5rem] text-[white] font-bold cursor-pointer ${translateCount==-800? 'opacity-50' : 'opacity-100'}`} onClick={()=>dispatch(HandleSwitchRight())}>{'>'}</div>
+
+<div className={`absolute w-[30px] h-[30px] left-[0] text-[2.5rem] text-[white] font-bold cursor-pointer ${translateCount==0? 'opacity-50' : 'opacity-100'}`} onClick={()=>dispatch(HandleSwitchLeft())}>{'<'}</div>
+
+</motion.div>
+
+<motion.div 
+variants={wrapperAnimation}
+custom={2}
+className={`flex justify-around mt-5`}>
 
 <a href="https://github.com/Evgen31rus">
     <img src={github} alt="" className='w-[30px] h-[29px]'/>
-</a>
+</a>                                                   
 
-<h1 className={`text-[1.3rem] font-medium text-center `}>Евгений Роговой</h1>
-</div>
+<h1 className={`text-[1.3rem] font-medium text-center `}>{RussianLanguage? 'Евгений Роговой' : 'Evgeniy Rogovoy'}</h1>
+</motion.div>
 
 
 
-    </div>
+    </motion.div>
 )
 }
