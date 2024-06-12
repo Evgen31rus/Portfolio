@@ -63,8 +63,8 @@ const imgAnimation ={
         variants={textAnimation}
         className={`flex flex-col w-[40%] h-[90%] items-center sm:w-[100%]`}>
           <h2 className={`text-[1.5rem] font-medium mb-5`}>{ RussianLanguage? titleRu : titleEn}</h2>
-          <p className={`text-[grey] mb-5 font-sans text-center`}>{ RussianLanguage? discriptionRu : discriptionEn}</p>
-          <div className="w-[100%] min-h-[30px] flex items-center justify-around text-[0.8rem] flex-wrap mb-5">
+          <p className={`text-[grey] mb-5 font-sans text-center sm:text-[0.8rem] sm:pl-3 sm:pr-3`}>{ RussianLanguage? discriptionRu : discriptionEn}</p>
+          <div className="w-[100%] min-h-[30px] flex items-center justify-around text-[0.8rem] flex-wrap mb-5 sm:text-[0.8rem] sm:pl-3 sm:pr-3">
           <p>#useForm</p>
           <p>#react-router-DOM</p>
           <p>#axios</p>
