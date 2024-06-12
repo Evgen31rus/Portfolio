@@ -91,7 +91,7 @@ export default function Info() {
 
 </div>
       <div 
-      className={`flex flex-col w-[100%] justify-center items-start sm:flex`}>
+      className={`flex flex-col w-[100%] justify-center items-start sm:flex `}>
         <motion.div
         variants={textAnimation}
         custom={1}>
