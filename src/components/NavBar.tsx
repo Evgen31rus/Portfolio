@@ -16,12 +16,12 @@ export default function NavBar() {
 
   return (
     <div
-      className={`flex z-50 w-[100%] h-[50px] bg-nav justify-center items-center sm:fixed sm:justify-end sm:pr-10`}
+      className={`flex z-50 w-[100%] h-[50px] bg-nav justify-center items-center sm:fixed sm:justify-around sm:pr-10 sm:flex-row-reverse`}
     >
 
 <BurgerMenu/>
 
-      <div className={`w-[50%] max-w-[1000px] flex justify-around sm:hidden `}>
+      <div className={`w-[50%] max-w-[1000px] flex justify-around  `}>
         <div className={`w-[240px] h-[30px] flex justify-around items-center `}>
           <p className={`font-bold text-[1.2rem]`}>{RussianLanguage? 'Язык' : 'Language'}</p>
           <div className={`w-[80px] h-[30px] shadow-lg shadow-cyan-500/50 rounded-xl cursor-pointer relative bg-cover bg-center transition-all duration-300 border-2 border-[#dbdada]`} onClick={()=>dispatch(HandleSwitchLanguage())}>
@@ -32,7 +32,7 @@ export default function NavBar() {
           
         </div>
 
-        <div className={`flex list-none w-[40%] justify-around`}>
+        <div className={`flex list-none w-[40%] justify-around sm:hidden`}>
           <a href={`#aboute`} className={`cursor-pointer`}>{RussianLanguage? 'Обо мне' : 'About me'}</a>
           <a href={`#works`} className={`cursor-pointer`}>{RussianLanguage? 'Мои проекты' : 'My projects'}</a>
         </div>

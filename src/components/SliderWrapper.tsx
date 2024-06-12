@@ -41,7 +41,7 @@ return(
     <motion.div 
     initial='hidden'
     whileInView='visible'
-    className={`flex flex-col w-[42%] h-[70%] justify-around sm:flex-col-reverse sm:w-[100%] `}>
+    className={`flex flex-col w-[42%] h-[70%] justify-around sm:flex-col-reverse sm:w-[100%] sm:items-center `}>
 
 
 
@@ -52,7 +52,7 @@ return(
 variants={wrapperAnimation}
 custom={1}
 
-className={`bg-nav flex items-center w-[400px] bg-cover bg-center overflow-hidden bg-norepeat h-[300px] rounded-2xl shadow-lg shadow-cyan-500/50 sm:w-[90%]  md:w-[300px] relative`}
+className={`bg-nav flex items-center w-[400px] bg-cover bg-center overflow-hidden bg-norepeat h-[300px] rounded-2xl shadow-lg shadow-cyan-500/50 sm:w-[90%]  md:w-[300px] relative sm:justify-center`}
 >
 
 {
@@ -68,13 +68,13 @@ className={`bg-nav flex items-center w-[400px] bg-cover bg-center overflow-hidde
 <motion.div 
 variants={wrapperAnimation}
 custom={2}
-className={`flex justify-around mt-5`}>
+className={`flex justify-around mt-5 sm:w-[100%] `}>
 
 <a href="https://github.com/Evgen31rus">
     <img src={github} alt="" className='w-[30px] h-[29px]'/>
 </a>                                                   
 
-<h1 className={`text-[1.3rem] font-medium text-center `}>{RussianLanguage? 'Евгений Роговой' : 'Evgeniy Rogovoy'}</h1>
+<h1 className={`text-[1.3rem] font-medium text-center sm:mb-5`}>{RussianLanguage? 'Евгений Роговой' : 'Evgeniy Rogovoy'}</h1>
 </motion.div>
 
 

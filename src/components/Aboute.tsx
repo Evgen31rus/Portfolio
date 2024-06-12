@@ -13,9 +13,9 @@ export default function Aboute(){
     }
 
     return(
-        <div className={`bg-[white] flex flex-col w-[90%] min-h-[550px] shadow-lg shadow-cyan-500/50 justify-around items-center max-w-[1200px] mt-5 sm:h-[900px] sm:w-[100%] sm:overflow-[hidden]`} id={`aboute`}>
+        <div className={`bg-[white] flex flex-col w-[90%] min-h-[550px] shadow-lg shadow-cyan-500/50 justify-around items-center max-w-[1200px] mt-5 sm:h-[1050px] sm:w-[100%] sm:overflow-[hidden] sm:mt-10 sm:pb-10`} id={`aboute`}>
 
-<h1 className={`flex h-[5%] text-[2.0rem] font-medium mb-5`}>{RussianLanguage? 'Обо мне':'About me'}</h1>
+<h1 className={`flex h-[5%] text-[2.0rem] font-medium mb-5 sm:mt-5`}>{RussianLanguage? 'Обо мне':'About me'}</h1>
 
             
 <div className={`flex w-[90%] h-[80%] justify-around items-center sm:flex-col-reverse`}>
@@ -34,7 +34,7 @@ export default function Aboute(){
     {RussianLanguage? 'Образование':'Education'}
 </div>
    
-<div className={`w-[100%] transition-[height] duration-300 mt-10 ${isOpenEducation? 'h-[100px]' : 'h-[0px]'} flex flex-col `}>
+<div className={`w-[100%] transition-[height] duration-300 mt-10 ${isOpenEducation? 'h-[100px] sm:h-[150px]' : 'h-[0px]'} flex flex-col sm:pl-2 sm:pr-2 sm:text-[0.9rem]`}>
 
     <p >{RussianLanguage? 'Государственное':'Public education'}<span className={`ml-2 text-[grey] `}>{RussianLanguage? 'Высшее образование (Ветеринария)':'Higher education (Veterinary medicine)'} </span></p>
     <p >{RussianLanguage? 'курсы':'courses'}<a target="_blank" href={`https://netology.ru/sharing/16a8ab8e3d9252eff4540d40675abc01?utm_source=social&utm_campaign=certificate_lms `} className={`ml-2 text-[grey] `}> {RussianLanguage? 'JavaScript-программирование для начинающих,':'JavaScript programming for beginners,'}</a><a target="_blank" href={`https://netology.ru/profile/program/lra-53/schedule`} className={`ml-2 text-[grey] `}> {RussianLanguage? 'React для JS-разработчиков':'React for JS developers'}</a></p>

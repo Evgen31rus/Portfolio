@@ -130,7 +130,7 @@ export default function Info() {
         custom={3}
         >
         <p className={`text-[1.0rem] font-medium mr-5 mb-5 mt-10`}>{RussianLanguage? 'Связь со мной:' : 'Contact me:'}</p>
-        <div className={`w-[60%] justify-around flex items-center`}>
+        <div className={`w-[60%] justify-around flex items-center sm:w-[100%]`}>
 {
     messagers.map((el, index)=>
         <a target="_blank" href={el.url}>
