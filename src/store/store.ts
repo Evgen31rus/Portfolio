@@ -1,11 +1,13 @@
 import { configureStore } from '@reduxjs/toolkit'
 import SliceSwitchSliderReducer from './SliceSwitchSlider'
 import SliceLanguageReducer from './SliceLanguage'
+import SliceMobileMenuReducer from './SliceMobileMenu'
 
 export const store = configureStore({
   reducer: {
 switchSlider: SliceSwitchSliderReducer,
-switchLanguage: SliceLanguageReducer
+switchLanguage: SliceLanguageReducer,
+SliceMobileMenu:SliceMobileMenuReducer
   },
 })
 

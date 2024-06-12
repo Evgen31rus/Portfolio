@@ -52,7 +52,7 @@ return(
 variants={wrapperAnimation}
 custom={1}
 
-className={`bg-nav flex items-center w-[400px] bg-cover bg-center overflow-hidden bg-norepeat h-[300px] rounded-2xl shadow-lg shadow-cyan-500/50 sm:w-[90%]  md:w-[300px] relative sm:justify-center`}
+className={`bg-nav flex items-center w-[400px] bg-cover bg-center overflow-hidden bg-norepeat h-[300px] rounded-2xl shadow-lg shadow-cyan-500/50 sm:w-[400px]  md:w-[300px] relative sm:`}
 >
 
 {

@@ -4,6 +4,7 @@ import typescriptPNG from '../img/typescript.png'
 import reactPNG from '../img/react.png'
 import reduxToolkitPNG from '../img/reduxToolkit.png'
 import tailwindPNG from '../img/tailwind.png'
+import iconViuportPNG from '../img/iconViuport.png'
 import {motion} from 'framer-motion'
 import { useSelector } from "react-redux";
 import { RootState } from "../store/store";
@@ -23,11 +24,18 @@ type propsTypes = {
   js?: boolean
   reduxTulkit?: boolean
   tailwind?: boolean
+  useForm?: boolean
+  reactRouterDom?:boolean
+  axios?: boolean
+  handySvg?: boolean
+  reactTransitionGroup?:boolean
+  gsap?: boolean
+  framerMotion?:boolean
   
 
 };
 
-export const WorkCard = forwardRef<HTMLDivElement, propsTypes>(({index, titleRu, titleEn, discriptionRu,  discriptionEn, urlCode, urlPage, img }, ref) => {
+export const WorkCard = forwardRef<HTMLDivElement, propsTypes>(({index, titleRu, titleEn, discriptionRu,  discriptionEn, urlCode, urlPage, img, useForm, reactRouterDom, reactTransitionGroup, axios, gsap,framerMotion , handySvg}, ref) => {
   const RussianLanguage = useSelector((state: RootState)=> state.switchLanguage.RussianLanguage)
   const textAnimation ={
     hidden:{
@@ -65,15 +73,17 @@ const imgAnimation ={
           <h2 className={`text-[1.5rem] font-medium mb-5`}>{ RussianLanguage? titleRu : titleEn}</h2>
           <p className={`text-[grey] mb-5 font-sans text-center sm:text-[0.8rem] sm:pl-3 sm:pr-3`}>{ RussianLanguage? discriptionRu : discriptionEn}</p>
           <div className="w-[100%] min-h-[30px] flex items-center justify-around text-[0.8rem] flex-wrap mb-5 sm:text-[0.8rem] sm:pl-3 sm:pr-3">
-          <p>#useForm</p>
-          <p>#react-router-DOM</p>
-          <p>#axios</p>
-          <p>#handy-svg</p>
-          <p>#react-transition-group</p>
+          <p className={useForm? 'flex':'hidden'}>#useForm</p>
+          <p className={reactRouterDom? 'flex':'hidden'}>#react-router-DOM</p>
+          <p className={axios? 'flex':'hidden'}>#axios</p>
+          <p className={handySvg? 'flex':'hidden'}>#handy-svg</p>
+          <p className={reactTransitionGroup? 'flex':'hidden'}>#react-transition-group</p>
+          <p className={framerMotion? 'flex':'hidden'}>#framer-motion</p>
+          <p className={gsap? 'flex':'hidden'}>#gsap</p>
           </div>
           <div className="w-[100%] h-[30px] flex items-center justify-around sm:mt-10">
 
-            <p className={`w-[30%] border-r-2 border-[grey] mr-5 `}>{ RussianLanguage? 'Cтек технологий': 'Technology stack'}</p>
+            <p className={`w-[30%] border-r-2 border-[grey] mr-5 sm:text-[0.8rem]`}>{ RussianLanguage? 'Cтек технологий': 'Technology stack'}</p>
 
 <img src={typescriptPNG} alt="" className={`w-[30px] h-[30px] `}/>
 <img src={reactPNG} alt="" className={`w-[30px] h-[30px] `}/>
@@ -94,9 +104,9 @@ const imgAnimation ={
             <a href={urlPage} className={`flex items-center font-bold`}>
               github page
               <img
-                src={githubPNG}
+                src={iconViuportPNG}
                 alt="github"
-                className={`w-[30px] h-[30px]`}
+                className={`w-[20px] h-[20px] ml-2`}
               />
             </a>
           </div>

@@ -17,7 +17,7 @@ export const SliceSwitchFilter = createSlice({
       state.translate ==-800? state.translate = -800 : state.translate -=400
     },
     HandleSwitchLeft: (state)=>{
-      state.translate===0? state.translate = 0 : state.translate +=400
+      state.translate==0? state.translate = 0 : state.translate +=400
     }
 
   },
