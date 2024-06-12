@@ -23,6 +23,7 @@ type propsTypes = {
   js?: boolean
   reduxTulkit?: boolean
   tailwind?: boolean
+  
 
 };
 

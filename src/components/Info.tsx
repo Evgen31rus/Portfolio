@@ -95,7 +95,7 @@ export default function Info() {
         <motion.div
         variants={textAnimation}
         custom={1}>
-        <p className={`text-[1.0rem] font-medium mr-5  sm:mb-5`}>{RussianLanguage? 'Стек технологий:' : 'Technology stack:'}</p>
+        <p className={`text-[1.0rem] font-medium mr-5  sm:mb-5`}>{RussianLanguage? 'Стек технологий: ' : 'Technology stack :'}</p>
         <div className={`flex pl-2 items-center h-[40px] `}>
         {steck.map((el, index) => (
           <a target="_blank" href={el.url}>
