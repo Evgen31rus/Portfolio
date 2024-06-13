@@ -85,21 +85,21 @@ export default function Info() {
     <motion.div 
       initial='hidden'
       whileInView='visible'
-    className={`flex flex-col justify-center w-[30%] h-[80%] p-5 sm:w-[100%] sm:items-start`}>
+    className={`flex flex-col justify-center w-[30%] h-[80%] p-5 sm:w-[100%] sm:items-start md:w-[100%] md:items-center lg:w-[40%]`}>
 
 <div>
 
 </div>
       <div 
-      className={`flex flex-col w-[100%] justify-center items-start sm:flex `}>
+      className={`flex flex-col w-[100%] justify-center items-start sm:flex md:items-center`}>
         <motion.div
         variants={textAnimation}
         custom={1}>
-        <p className={`text-[1.0rem] font-medium mr-5  sm:mb-5`}>{RussianLanguage? 'Стек технологий: ' : 'Technology stack :'}</p>
-        <div className={`flex pl-2 items-center h-[40px] `}>
+        <p className={`text-[1.0rem] font-medium mr-5  sm:mb-5 md:text-center`}>{RussianLanguage? 'Стек технологий: ' : 'Technology stack :'}</p>
+        <div className={`flex pl-2 items-center h-[40px] md:justify-start `}>
         {steck.map((el, index) => (
           <a target="_blank" href={el.url}>
-            <img src={el.png} alt="" className={`w-[25px] h-[25px] ml-2 mr-2`}/>
+            <img src={el.png} alt="" className={`w-[25px] h-[25px] ml-2 mr-2  `}/>
           </a>
         ))}
         </div>
@@ -111,7 +111,7 @@ export default function Info() {
         variants={textAnimation}
         custom={2}
         >
-        <p className={`text-[1.0rem] font-medium mr-5 mb-5 mt-5`}>{RussianLanguage? 'Геопозиция:' : 'Geolocation:'}</p>
+        <p className={`text-[1.0rem] font-medium mr-5 mb-5 mt-5 md:text-center `}>{RussianLanguage? 'Геопозиция:' : 'Geolocation:'}</p>
         <div 
         
         className={`flex items-center justify-start w-[100%] h-[10px] `}>
@@ -120,7 +120,7 @@ export default function Info() {
               width="25px"
               height="15px"
             />
-            <p className={`text-[0.8rem] font-medium ml-5`} >{RussianLanguage? 'РФ, Белгородская обл. , г.Белгород' : 'Russian Federation, Belgorod region. , Belgorod'}</p>
+            <p className={`text-[0.8rem] font-medium ml-5 `} >{RussianLanguage? 'РФ, Белгородская обл. , г.Белгород' : 'Russian Federation, Belgorod region. , Belgorod'}</p>
         </div>
         </motion.div>
         
@@ -129,8 +129,8 @@ export default function Info() {
         variants={textAnimation}
         custom={3}
         >
-        <p className={`text-[1.0rem] font-medium mr-5 mb-5 mt-10`}>{RussianLanguage? 'Связь со мной:' : 'Contact me:'}</p>
-        <div className={`w-[60%] justify-around flex items-center sm:w-[100%]`}>
+        <p className={`text-[1.0rem] font-medium mr-5 mb-5 mt-10 md:text-center`}>{RussianLanguage? 'Связь со мной:' : 'Contact me:'}</p>
+        <div className={`w-[60%] justify-around flex items-center sm:w-[100%] md:w-[100%]`}>
 {
     messagers.map((el, index)=>
         <a target="_blank" href={el.url}>

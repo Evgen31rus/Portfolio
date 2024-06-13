@@ -13,12 +13,12 @@ export default function Aboute(){
     }
 
     return(
-        <div className={`bg-[white] flex flex-col w-[90%] min-h-[550px] shadow-lg shadow-cyan-500/50 justify-around items-center max-w-[1200px] mt-5 sm:h-[1050px] sm:w-[100%] sm:overflow-[hidden] sm:mt-10 sm:pb-10`} id={`aboute`}>
+        <div className={`bg-[white] flex flex-col w-[90%] min-h-[550px] shadow-lg shadow-cyan-500/50 justify-around items-center max-w-[1200px] mt-5 sm:h-[1050px] sm:w-[100%] sm:overflow-[hidden] sm:mt-10 sm:pb-10 `} id={`aboute`}>
 
 <h1 className={`flex h-[5%] text-[2.0rem] font-medium mb-5 sm:mt-5`}>{RussianLanguage? 'Обо мне':'About me'}</h1>
 
             
-<div className={`flex w-[90%] h-[80%] justify-around items-center sm:flex-col-reverse`}>
+<div className={`flex w-[90%] h-[80%] justify-around items-center sm:flex-col-reverse md:flex-col`}>
 <Info/>
 <Slider/>
 </div>

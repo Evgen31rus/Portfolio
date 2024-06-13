@@ -41,7 +41,7 @@ return(
     <motion.div 
     initial='hidden'
     whileInView='visible'
-    className={`flex flex-col w-[42%] h-[70%] justify-around sm:flex-col-reverse sm:w-[100%] sm:items-center `}>
+    className={`flex flex-col w-[42%] h-[70%] justify-around sm:flex-col-reverse sm:w-[100%] sm:items-center md:w-[48%] md:h-[300px]`}>
 
 
 
@@ -52,7 +52,7 @@ return(
 variants={wrapperAnimation}
 custom={1}
 
-className={`bg-nav flex items-center w-[400px] bg-cover bg-center overflow-hidden bg-norepeat h-[300px] rounded-2xl shadow-lg shadow-cyan-500/50 sm:w-[400px]  md:w-[300px] relative sm:`}
+className={`bg-nav flex items-center w-[400px]  overflow-hidden bg-norepeat h-[300px] rounded-2xl shadow-lg shadow-cyan-500/50 sm:w-[350px]  md:w-[100%] md:justify-start md:h-[250px] relative sm:`}
 >
 
 {
