@@ -24,7 +24,7 @@ export default function NavBar() {
       <div className={`w-[50%] max-w-[1000px] flex justify-around  md:w-[80%]`}>
         <div className={`w-[240px] h-[30px] flex justify-around items-center `}>
           <p className={`font-bold text-[1.2rem]`}>{RussianLanguage? 'Язык' : 'Language'}</p>
-          <div className={`w-[80px] h-[30px] shadow-lg shadow-cyan-500/50 rounded-xl cursor-pointer relative bg-cover bg-center transition-all duration-300 border-2 border-[#dbdada]`} onClick={()=>dispatch(HandleSwitchLanguage())}>
+          <div className={`switch_Language w-[80px] h-[30px] shadow-lg shadow-cyan-500/50 rounded-xl cursor-pointer relative bg-cover bg-center transition-all duration-300 border-2 border-[#dbdada] overflow-hidden`} onClick={()=>dispatch(HandleSwitchLanguage())}>
           <div className={`w-[30px] h-[100%] bg-cover bg-center rounded-full absolute transition-all duration-300 ${RussianLanguage? 'left-[0%]' : 'left-[65%]'}`}  style={{backgroundImage: `url('${RussianLanguage? RussianPNG : usaPNG} ')`} }></div>
           </div>
           

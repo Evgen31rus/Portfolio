@@ -32,6 +32,11 @@ code {
   position: relative;
 }
 
+.switch_Language{
+  -webkit-box-shadow: -12px -12px 17px -10px rgba(34, 60, 80, 0.49) inset;
+-moz-box-shadow: -12px -12px 17px -10px rgba(34, 60, 80, 0.49) inset;
+box-shadow: -12px -12px 17px -10px rgba(34, 60, 80, 0.49) inset;
+}
 .worksCard:nth-child(even) {
 flex-direction: row-reverse;
 }

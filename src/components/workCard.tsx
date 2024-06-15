@@ -94,7 +94,7 @@ const imgAnimation ={
 
           </div>
           <div className={`flex  justify-around w-[60%] mt-5 sm:w-[100%] sm:mt-10 md:w-[100%] md:h-[20px]`}>
-            <a href={urlCode} className={`flex items-center font-bold  md:text-[0.8rem]`}>
+            <a target="_blank" href={urlCode} className={`flex items-center font-bold  md:text-[0.8rem]`}>
               code
               <img
                 src={githubPNG}
@@ -102,7 +102,7 @@ const imgAnimation ={
                 className={`w-[30px] h-[30px] md:w-[20px] md:h-[20px]`}
               />
             </a>
-            <a href={urlPage} className={`flex items-center font-bold md:text-[0.8rem]`}>
+            <a target="_blank" href={urlPage} className={`flex items-center font-bold md:text-[0.8rem]`}>
               github page
               <img
                 src={iconViuportPNG}

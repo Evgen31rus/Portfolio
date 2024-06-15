@@ -1,4 +1,5 @@
 import {forwardRef} from 'react'
+import CryptoPNG from '../img/works/Crypto.png'
 import png from '../img/works/Немецкий Стандарт.png'
 import proAutoPNG from '../img/works/pro avto.png'
 import portfolioPNG from '../img/works/portfolio.png'
@@ -12,6 +13,20 @@ import { RootState } from '../store/store'
 export const  Works = forwardRef<HTMLDivElement>( (props, ref) => {
     const RussianLanguage = useSelector((state: RootState)=> state.switchLanguage.RussianLanguage)
     const works = [
+        {
+            titleRu: 'Обменник криптовалютой',
+            titleEn: 'cryptocurrency exchanger',
+            discriptionRu: 'Данный проект был создан с применением кэширования данных при первом рендере в LocalStorage, с последющим таймером на 10 минут для обновления данных, что позволяет приложению работать намного быстрее, а так же не перегружать сервер запросами. Приложение отлично адаптированно под любые расширения экрана',
+            discriptionEn: 'This project was created using data caching during the first render in LocalStorage, with a subsequent 10-minute timer for updating data, which allows the application to run much faster and also not overload the server with requests. The application is perfectly adapted to any screen size.',
+            urlCode: 'https://github.com/Evgen31rus/Crypto',
+            urlPage: 'https://evgen31rus.github.io/Crypto/',
+            img:CryptoPNG,
+            handySvg: true,
+            framerMotion: true,
+            reactTransitionGroup: true,
+            axios: true,
+
+        },
         {
             titleRu: 'Немецкий стандарт',
             titleEn: 'German standard',
