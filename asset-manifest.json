@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.378a3815.css",
-    "main.js": "/Portfolio/static/js/main.bc099175.js",
+    "main.css": "/Portfolio/static/css/main.edda57ee.css",
+    "main.js": "/Portfolio/static/js/main.1fa6fb04.js",
     "static/js/453.acca0757.chunk.js": "/Portfolio/static/js/453.acca0757.chunk.js",
     "static/media/pro avto.png": "/Portfolio/static/media/pro avto.261d7d77692e5318e8b2.png",
     "static/media/img1.jpg": "/Portfolio/static/media/img1.d054080baaa90481287d.jpg",
@@ -13,6 +13,7 @@
     "static/media/portfolio.png": "/Portfolio/static/media/portfolio.4fdb8619dda87a27d32c.png",
     "static/media/tailwind.png": "/Portfolio/static/media/tailwind.3549d9e451d7abb96934.png",
     "static/media/USA.png": "/Portfolio/static/media/USA.dbe74c684bbc359bfa3d.png",
+    "static/media/Crypto.png": "/Portfolio/static/media/Crypto.120cc7ba12223f60e0ec.png",
     "static/media/github.png": "/Portfolio/static/media/github.39e986cf3049d714012f.png",
     "static/media/reduxToolkit.png": "/Portfolio/static/media/reduxToolkit.5de70b7bc0d2556a0958.png",
     "static/media/butstrap.png": "/Portfolio/static/media/butstrap.d5210cdeab1bc94309c4.png",
@@ -20,12 +21,12 @@
     "static/media/sass.png": "/Portfolio/static/media/sass.1e7800226257cf0a44bf.png",
     "index.html": "/Portfolio/index.html",
     "static/media/location.svg": "/Portfolio/static/media/location.30d284ff7e4d7b2528f63bef38c346a6.svg",
-    "main.378a3815.css.map": "/Portfolio/static/css/main.378a3815.css.map",
-    "main.bc099175.js.map": "/Portfolio/static/js/main.bc099175.js.map",
+    "main.edda57ee.css.map": "/Portfolio/static/css/main.edda57ee.css.map",
+    "main.1fa6fb04.js.map": "/Portfolio/static/js/main.1fa6fb04.js.map",
     "453.acca0757.chunk.js.map": "/Portfolio/static/js/453.acca0757.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.378a3815.css",
-    "static/js/main.bc099175.js"
+    "static/css/main.edda57ee.css",
+    "static/js/main.1fa6fb04.js"
   ]
 }
